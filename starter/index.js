@@ -114,7 +114,7 @@ for (var i = 1; i < finances.length; i++) {
   totalChange = totalChange + change;
 }
 
-// find average by diving total change / 85 (how many changes there are)
+// find average by diving total change / 85 (how many changes there are (86-1))
 
 var averageChange = totalChange / (finances.length - 1);
 

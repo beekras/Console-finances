@@ -15,8 +15,13 @@
 
 - The greatest decrease in losses (date and amount) over the entire period.
 
+## Deployed Application
+
+
+
 ## Screenshot
-![Screenshot of console.log](image.png)
+![Screenshot of console.log](/starter/image.png)
+
 
 ## License
 

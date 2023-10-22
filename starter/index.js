@@ -86,3 +86,43 @@ var finances = [
   ['Jan-2017', 138230],
   ['Feb-2017', 671099],
 ];
+
+console.log ("Financial Analysis");
+
+console.log ("Total months: " + finances.length);
+ 
+// for loop to add up the total of second index //
+
+var total = 0 
+
+for (var i = 0; i < finances.length; i++) {
+total = total + finances[i][1];
+}
+console.log ("Total: " + total);
+
+// find the difference in profit between each month
+ 
+// find total change 
+
+var change; 
+
+var totalChange = 0;
+
+for ( var i = 1; i < finances.length; i++) {
+
+change = finances[i][1] - finances[i-1][1];
+
+totalChange = totalChange + change;
+
+}
+
+// find average by diving total change / 85 (how many changes there are)
+
+var averageChange = totalChange/(finances.length-1);
+
+// print to 2dp 
+
+averageChange = averageChange.toFixed(2);
+
+console.log("Average change: " + averageChange);
+
